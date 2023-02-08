@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 5px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #fff;
+	color: #333;
+	font-family: "Courier New", "Courier", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-image: linear-gradient(to top right, #574ede, #4c8dc7, lightblue);
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* display: inline-block; */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hundred {
+	position: absolute;
+	height: 40px;
+	width: 20px;
+	border-radius: 2px;
+	background: white;
+	transform: rotate(50deg);
+	z-index: 2;
+	margin-bottom: 76px;
+	margin-right: 170px;
+	box-shadow: 0px 0px 10px 0 white; 
+}
+.hundred-2 {
+	position: absolute;
+	height: 100px;
+	width: 24px;
+	background: white;
+	border-radius: 2px;
+	z-index: 3;
+	margin-left: 17px;
+	box-shadow: 0px 0px 10px 0 white;
+}
+
+.zero {
+	position: absolute;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	border: 22px solid white;
+	margin-left: 104px;
+	z-index: 0;
+	box-shadow: 0px 0px 10px 0 white;
+}
+.zero-2 {
+	position: absolute;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	border: 22px solid white;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 0 white; 
+	margin-left: 26px;
+}
+
+
+.days {
+	font-size: 72px;
+	margin: 0;
+	color: white;
+	font-weight: bold;
+	margin-top: 250px;
+	
+}
+
+.css-challenge {
+	position: relative;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: -127px;
+}
