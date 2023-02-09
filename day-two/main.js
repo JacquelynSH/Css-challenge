@@ -1,4 +1,4 @@
-const menuButton = document.querySelector('.menu');
+const menuButton = document.querySelector('.menu-container');
 
 let menuOpen = false;
 
@@ -10,4 +10,4 @@ menuButton.addEventListener('click', () => {
     menuButton.classList.remove('open');
     menuOpen = false;
   }
-})
+});
