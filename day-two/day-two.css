@@ -27,9 +27,20 @@
   transform: translate(-50%,-50%);
 }
 
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  transition: all .5 ease-in-out;
+
+}
+
 .menu {
-  width: 50px;
-  height: 6px;
+  width: 75px;
+  height: 8px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
@@ -40,8 +51,8 @@
 .menu::after {
   content: '';
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 75px;
+  height: 8px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
@@ -56,15 +67,17 @@
   transform: translateY(16px);
 }
 
-.menu.open {
+/* animation */
+
+.menu-container.open .menu{
   transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
 }
 
-.menu.open .menu::before {
+.menu-container.open .menu::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
-.menu.open .menu::after {
+.menu-container.open .menu::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
