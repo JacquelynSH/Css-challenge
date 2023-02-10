@@ -70,14 +70,20 @@
 /* animation */
 
 .menu-container.open .menu{
-  transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
 }
 
 .menu-container.open .menu::before {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: translateY(0px) 
 }
 .menu-container.open .menu::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: translateY(0px) 
+}
+
+.menu-container.cross .menu::before {
+  transform: rotate(45deg);
+}
+.menu-container.cross .menu::after {
+  transform: rotate(-45deg);
 }
