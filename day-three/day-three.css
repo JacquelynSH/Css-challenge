@@ -9,10 +9,10 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  border-radius: 2px;
+  border-radius: 5px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: #fff;
+  background: black;
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -25,3 +25,75 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.sand {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 200px;
+  border-radius: 0 0 150px 150px;
+  background-color: rgb(227, 203, 96); 
+}
+
+.sun {
+  top: 37px;
+  left: 25px;
+  border-radius: 50%;
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: yellow;
+}
+
+.triangle-body {
+position: relative;
+width: 75px;
+height: 75px;
+transform-style: preserve-3d;
+
+}
+
+.triangle {
+position: absolute;
+top: 30px;
+left: 24px;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+
+}
+
+.triangle-side {
+position: absolute;
+top: 43px;
+left: 23px;
+height: 57px;
+width: 116px;
+background-color: lightgrey;
+clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+transform-origin: bottom;
+
+}
+
+.triangle-side-two {
+  position: absolute;
+  top: 43px;
+  left: 81px;
+  height: 57px;
+  width: 58px;
+  background-color: white;
+  clip-path: polygon(30% 100%, 100% 100%, 0% 0%);
+  transform-origin: right;
+
+  }
