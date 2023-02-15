@@ -55,6 +55,7 @@
   width: 200px;
   border-radius: 0 0 150px 150px;
   background-color: rgb(227, 203, 96); 
+  z-index: 0;
 }
 
 .sun {
@@ -106,11 +107,11 @@ animation: triangle-side 4s infinite;
 }
 
 @keyframes triangle-side {
-  0%   {background-color: white;}
+  0%  {background-color: white;}
   25% {background-color: white;}
   40% {background-color: white;}
-  60%  {background-color: lightgrey;}
-  100% {background-color: lightgrey;}
+  60% {background-color: lightgrey;}
+  100%{background-color: lightgrey;}
 }
 
 .triangle-side-two {
@@ -130,4 +131,33 @@ animation: triangle-side 4s infinite;
     40% {background-color: rgb(223, 221, 221);}
     60%  {background-color: white;}
     100% {background-color: white;}
+  }
+
+  .shadow-container{
+
+
+  position: relative;
+  right: 25px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .shadow {
+    position: absolute;
+    /* left: 48px; */
+    top: 100px;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(178, 159, 75);
+    clip-path: polygon(21% 0, 83% 0, 100% 0, 100% 9%);
+    animation: shadow 4s infinite;
+  }
+
+  @keyframes shadow {
+    0%   {clip-path: polygon(25% 0, 82% 0, 100% 0, 100% 9%);}
+    25%  {clip-path: polygon(25% 0%, 82% 0%, 100% 23%, 100% 37%);}
+    40% {clip-path: polygon(25% 0%, 82% 0%, 45% 28%, 44% 26%);}
+    60% {clip-path: polygon(25% 0%, 82% 0%, 45% 28%, 44% 26%);}
+    100% {clip-path: polygon(25% 0%, 82% 0%, 0 11%, 0 5%);}
+    
   }
