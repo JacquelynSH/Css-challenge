@@ -150,14 +150,18 @@ animation: triangle-side 4s infinite;
     width: 100%;
     background-color: rgb(178, 159, 75);
     clip-path: polygon(21% 0, 83% 0, 100% 0, 100% 9%);
-    animation: shadow 4s infinite;
+    animation: shadow 4s cubic-bezier(.4,0,.49,1) infinite;
+    
+   
   }
 
   @keyframes shadow {
     0%   {clip-path: polygon(25% 0, 82% 0, 100% 0, 100% 9%);}
     25%  {clip-path: polygon(25% 0%, 82% 0%, 100% 23%, 100% 37%);}
     40% {clip-path: polygon(25% 0%, 82% 0%, 45% 28%, 44% 26%);}
-    60% {clip-path: polygon(25% 0%, 82% 0%, 45% 28%, 44% 26%);}
-    100% {clip-path: polygon(25% 0%, 82% 0%, 0 11%, 0 5%);}
+    75% {clip-path: polygon(25% 0%, 82% 0%, 0% 40%, 0% 41%);}
+    95% {clip-path: polygon(25% 0%, 82% 0%, 0 11%, 0 5%);}
+    100% {clip-path: polygon(25% 0%, 82% 0%, 0 7%, 0 2%);}
+    
     
   }
